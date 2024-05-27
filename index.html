@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de jugadores</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</head>
+<body>
+    <div class="top-container"></div>
+    
+    <div>
+
+        <div class="container">
+        
+            <input id="firstName" type="text" placeholder="First Name">
+            <input id="lastName" type="text" placeholder="Last Name">
+            <input id="equipo" type="text" placeholder="Equipo">
+            <button type="button" id="agenda-btn">Add</button>
+    
+           
+        </div>
+            
+        <div class="container">
+                <input id="searchDorsal" type="text" placeholder="searchEquipo">
+                <button type="button" id="buscar-btn">Search</button>
+         </div>
+            
+         <div class="container">
+               
+               <button type="button" id="min-btn">Ver el valor menor</button>
+        </div >
+
+        <div class="container">
+             <button type="button" id="max-btn">Ver el valor mayor</button>
+        </div>
+           
+        <button id="inOrden">Ver Jugadores</button>
+        
+    </div>
+
+    </div>
+    <div id="mostrar" class="containerP"></div>
+
+    
+    <script type="module" src="./src/controllers/script.js"></script>
+</body>
+</html>
